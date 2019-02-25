@@ -1,5 +1,4 @@
 package com.bugbean.tinkinginjavademo.chapter2;
-
 /**
  * @author dugm
  * @description ${DESCRIPTION}
