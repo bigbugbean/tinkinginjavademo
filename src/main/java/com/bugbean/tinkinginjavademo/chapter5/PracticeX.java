@@ -18,6 +18,8 @@ public class PracticeX {
 }
 
 class Cat {
+    public static String s = "";
+
     public Cat walk() {
         System.out.println(this);
         return this;
