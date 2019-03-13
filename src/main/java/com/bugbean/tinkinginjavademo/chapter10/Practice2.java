@@ -58,6 +58,11 @@ class Sequence {
     private class SequenceSelector implements Selector {
         private int i = 0;
 
+        public Sequence getSequence() {
+            return Sequence.this;
+        }
+
+        @Override
         public boolean end() {
             return i == items.length;
         }

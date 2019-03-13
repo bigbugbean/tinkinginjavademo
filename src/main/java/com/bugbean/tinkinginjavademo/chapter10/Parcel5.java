@@ -1,0 +1,29 @@
+package com.bugbean.tinkinginjavademo.chapter10;
+
+/**
+ * @author dugm
+ * @description ${DESCRIPTION}
+ * @date 2019-03-11 16:05
+ */
+public class Parcel5 {
+    public Destination destination(String s) {
+        class PDestination implements Destination {
+            private String label;
+
+            private PDestination(String whereTo) {
+                label = whereTo;
+            }
+
+            @Override
+            public String readLabel() {
+                return label;
+            }
+        }
+        return new PDestination(s);
+    }
+
+    public static void main(String[] args) {
+        Parcel5 p = new Parcel5();
+        Destination d = p.destination("Tasmania");
+    }
+}
