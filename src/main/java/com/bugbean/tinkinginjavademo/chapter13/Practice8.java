@@ -13,10 +13,11 @@ public class Practice8 {
             "cut down the mightiest tree in the forest... " +
             "with... a herring!";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         String[] split = s.split("the|you");
         System.out.println(Arrays.toString(split));
-
         System.out.println(s.replaceAll("[aeiouAEIOU]", "_"));
+        Class<?> practice8 = Class.forName("Practice8");
+        Class<Practice8> practice8Class = Practice8.class;
     }
 }
