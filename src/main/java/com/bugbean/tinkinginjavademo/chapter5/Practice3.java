@@ -7,11 +7,11 @@ package com.bugbean.tinkinginjavademo.chapter5;
  */
 public class Practice3 {
     public Practice3() {
-        System.out.println("Practice3()");
+        System.out.println("Practice8()");
     }
 
     public Practice3(String s) {
-        System.out.println("Practice3()" + s);
+        System.out.println("Practice8()" + s);
     }
 
     public static void main(String[] args) {

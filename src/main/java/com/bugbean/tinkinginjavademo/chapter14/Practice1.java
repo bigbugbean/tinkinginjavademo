@@ -11,11 +11,3 @@ public class Practice1 {
         Object o = c.newInstance();
     }
 }
-
-class Toy {
-    /*public Toy() {
-    }*/
-
-    public Toy(int i) {
-    }
-}
