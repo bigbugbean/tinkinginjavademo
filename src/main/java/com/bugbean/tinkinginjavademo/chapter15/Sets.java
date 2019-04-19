@@ -10,5 +10,6 @@ import java.util.Set;
  */
 public class Sets {
     public static <T> Set<T> union(Set<T> a, EnumSet b) {
+        return null;
     }
 }
