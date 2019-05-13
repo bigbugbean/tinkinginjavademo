@@ -21,5 +21,4 @@ public class GenMethod<T extends Method2> {
         System.out.println(b.getClass().getSimpleName());
     }
 
-    int a(int a,b){}
 }
