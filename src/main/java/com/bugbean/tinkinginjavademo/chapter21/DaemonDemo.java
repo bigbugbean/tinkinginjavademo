@@ -22,7 +22,7 @@ public class DaemonDemo {
     }
 }
 
-class ADaemon implements Runnable {
+class ADaemon extends Thread implements Runnable {
     @Override
     public void run() {
         try {
