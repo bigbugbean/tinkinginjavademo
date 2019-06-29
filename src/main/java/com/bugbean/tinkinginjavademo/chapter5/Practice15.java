@@ -14,7 +14,7 @@ public class Practice15 {
     }
 
     public Practice15() {
-        System.out.println("Practice15()");
+        System.out.println("SynchronizedTester()");
     }
 
     public static void main(String[] args) {

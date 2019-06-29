@@ -17,7 +17,7 @@ public class ShareDemo {
 }
 
 abstract class IntGenerator {
-    private volatile boolean canceled = false;
+    private /*volatile*/ boolean canceled = false;
 
     public abstract int next();
 
@@ -75,20 +75,20 @@ class EvenGenerator extends IntGenerator {
     /**
      *内置锁
      */
-    /*@Override
+    @Override
     public synchronized int next() {
         ++currentEvenValue;
         Thread.yield();
         ++currentEvenValue;
         return currentEvenValue;
-    }*/
+    }
 
     /**
      * 显式锁
      *
      * @return
      */
-    @Override
+    /*@Override
     public int next() {
         lock.lock();
         try {
@@ -99,5 +99,5 @@ class EvenGenerator extends IntGenerator {
         } finally {
             lock.unlock();
         }
-    }
+    }*/
 }
